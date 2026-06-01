@@ -5,7 +5,7 @@ Docker image for Neo4j 5.22.0 with APOC plugin pre-installed, used by [jj_build_
 ## Usage
 
 ```bash
-docker build -t jejuness:jj_neo4j_docker .
+docker build -t jejuness:jj_neo4j_docker https://github.com/EricBoix/jj_neo4j_docker.git
 ```
 
 ```bash
