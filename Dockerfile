@@ -6,7 +6,7 @@ FROM neo4j:5.26.26
 # as data integration, graph algorithms, and data conversion. These procedures
 # and functions are implemented in Java and can be deployed into a Neo4j
 # instance, and then be called from Cypher directly.
-ENV NEO4JLABS_PLUGINS '[ "apoc" ]'
+ENV NEO4JLABS_PLUGINS='[ "apoc" ]'
 ENV NEO4J_dbms_security_procedures_unrestricted=apoc.*
 ENV NEO4J_apoc_export_file_enabled=true
 ENV NEO4J_apoc_import_file_enabled=true
