@@ -12,10 +12,6 @@ docker build -t jejuness:jj_neo4j_docker https://github.com/EricBoix/jj_neo4j_do
 docker run \
     --publish=7474:7474 --publish=7687:7687 \
     --env NEO4J_AUTH=neo4j/your_password \
-    -e NEO4J_apoc_export_file_enabled=true \
-    -e NEO4J_apoc_import_file_enabled=true \
-    -e NEO4J_apoc_import_file_use__neo4j__config=true \
-    -e NEO4J_dbms_security_procedures_unrestricted: "apoc.*" \
     -v `pwd`/data:/data \
     --rm \
     jejuness:jj_neo4j_docker
@@ -23,8 +19,8 @@ docker run \
 
 ## What's Included
 
-- Neo4j 5.22.0
-- APOC 5.22.0 core plugin
+- Neo4j 5.26.26
+- APOC 5.26.26 core plugin
 - Ports exposed: 7474 (HTTP), 7687 (Bolt)
 
 ## Devel debug notes
